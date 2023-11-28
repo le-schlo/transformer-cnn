@@ -12,8 +12,7 @@ conda create -n transformer-cnn python=3.6.0
 conda activate transformer-cnn
 
 pip install tensorflow==1.12.0
-pip install rdkit==2018.09.2
-
+pip install rdkit-pypi==2021.9.4
 ```
 
 
