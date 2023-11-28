@@ -1,5 +1,22 @@
 # Transformer-CNN
 
+
+#Notes for usage with EnTdecker platform
+
+Due to conflicting dependencies a new environment is required to run this code.
+Use the following steps to create a new environment and install the required dependencies:
+
+1. Create a new environment with python 3.6.0
+```
+conda create -n transformer-cnn python=3.6.0
+conda activate transformer-cnn
+
+pip install tensorflow==1.12.0
+pip install rdkit==2018.09.2
+
+```
+
+
 The repository contains the source code for a new Transformer-CNN method described in our paper http://arxiv.org/abs/1911.06603. First, we trained the Transformer model on SMILES canonicalization task, e.g., given an arbitrary SMILES, the model converts it to a canonical one. Second, we use the internal representation of the Transformer (the output of the encoding stack with shape (BATCH, LENGTH, EMBEDDING)) as SMILES embeddings and build upon them CharNN model (Convolution and HighWay as it is done in DeepChem). The resulting model works both in classification and regression settings.
 
 The "standalone" folder provides the implementation of the Transformer-CNN model for prognosis without TensorFlow (depends on only NumPy and RDKit). The solubility and AMES models are available. [Layerwise Relevance Propagation method](https://link.springer.com/chapter/10.1007/978-3-030-28954-6_10) is used to infer the model's reasoning behind a particular prediction.
