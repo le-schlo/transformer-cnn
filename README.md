@@ -1,6 +1,3 @@
-# Transformer-CNN
-
-
 # Notes for usage with EnTdecker platform
 
 Due to conflicting dependencies a new environment is required to run this code.
@@ -15,6 +12,7 @@ pip install tensorflow==1.12.0
 pip install rdkit-pypi==2021.9.4
 ```
 
+# Transformer-CNN
 
 The repository contains the source code for a new Transformer-CNN method described in our paper http://arxiv.org/abs/1911.06603. First, we trained the Transformer model on SMILES canonicalization task, e.g., given an arbitrary SMILES, the model converts it to a canonical one. Second, we use the internal representation of the Transformer (the output of the encoding stack with shape (BATCH, LENGTH, EMBEDDING)) as SMILES embeddings and build upon them CharNN model (Convolution and HighWay as it is done in DeepChem). The resulting model works both in classification and regression settings.
 
