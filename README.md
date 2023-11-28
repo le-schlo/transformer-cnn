@@ -3,14 +3,17 @@
 Due to conflicting dependencies a new environment is required to run this code.
 Use the following steps to create a new environment and install the required dependencies:
 
-1. Create a new environment with python 3.6.0
+
 ```
+#Create a new environment with python 3.6.0
 conda create -n transformer-cnn python=3.6.0
 conda activate transformer-cnn
 
+#Install required packages
 pip install tensorflow==1.12.0
 pip install rdkit-pypi==2021.9.4
 
+#Run training
 python transformer-cnn.py config.cfg
 ```
 
