@@ -1,7 +1,7 @@
 # Transformer-CNN
 
 
-#Notes for usage with EnTdecker platform
+# Notes for usage with EnTdecker platform
 
 Due to conflicting dependencies a new environment is required to run this code.
 Use the following steps to create a new environment and install the required dependencies:
