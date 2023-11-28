@@ -10,6 +10,8 @@ conda activate transformer-cnn
 
 pip install tensorflow==1.12.0
 pip install rdkit-pypi==2021.9.4
+
+python transformer-cnn.py config.cfg
 ```
 
 # Transformer-CNN
